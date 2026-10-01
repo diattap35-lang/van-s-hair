@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Van's Hair</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            text-align: center;
+        }
+        header {
+            background-color: #e91e63;
+            color: white;
+            padding: 30px;
+
+        }
+        h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+        nav {
+            background-color: white;
+            padding: 15px;
+        }
+        nav a {
+            color:  #e91e63;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+        </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>VAN'S HAIR🌸🌸</h1>
+        <p>La beauté de vos cheveux commence ici.</p>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="produit.html">Produit</a>
+        <a href="apropos.html">A propos</a>
+        <a href="contact.html">Contact</a>
+        
+    </nav>
+    <main>
+        <section class="Accueil">
+            <h1>Bienvenue chez Van's Hair</h1>
+            <p>Des soins pensés pour révèler la beauté de vos cheveux</p>
+            <img src="images/gamme.jpg" alt="game de produits Van's Hair">
+            <a href="produit.html" class="bouton">Découvrez nos produits</a>
+        </section>
+    <section class="produits">
+        <div>
+            <h3>Crème Capillaire Rose🌹</h3>
+
+            <p>
+                Une crème capillaire pour nourrir, hydrater et prendre soin de vos cheveux.
+            </p>
+            <p><strong>contenance : 250 ml</strong></p>
+
+            <p><strong>Prix : 3000 FCFA</strong></p>
+            <button onclick="ouvrirFormulaire()">Commander</button>
+    </div>
+</section>
+</main>
+<section>
+    <h2>Pourquoi choisir van's Hair ?</h2>
+    <p>🌸 Des soins adaptatés a vos cheveux</p>
+    <p>💧 Des produits pour nourrir et hydrater</p>
+    <p>✨ Des produits pour des cheveux beaux et en bonne santé</p>
+</section>
+<section>
+    <h2>Nos engagements</h2>
+    <p>❤️ Prendre soin de vos cheveux avec attention</p>
+    <p>🌿 Proposer des soins de qualité</p>
+    <p>✨ Vous accompagner vers une routine capillaire adaptée</p>
+</section>
+<section>
+    <h2>A propos de Van's Hair</h2>
+    <p>Van's Hair est une marque dediée à la beauté et au soin des cheveux</p>
+    <p>Nous proposons des produits pensés pour prendre soin de vos cheveux au quotidien</p>
+    <a href="apropos.html" class="btn">En savoir plus</a>
+</section>
+<section>
+    <h2>Prête à prendre soin de vos cheveux ?</h2>
+    <p>Découvrez nos soins capillaires et trouvez le produit qui vous convient.</p>
+    <button>Découvrez nos produits</button>
+</section>
+<section>
+    <h2>Merci de visiter Van's Hair</h2>
+    <p>Votre beauté, notre passion. Prenez soin de vos cheveux avec Van's Hair</p>
+</section>
+<div id="formulaireCommande" style="display: none;">
+    <h2>passer une commmande</h2>
+    <input type="text" id="nom" placeholder="Votre nom">
+    <input type="tel" id="télèphone" placeholder="Votre numero de télèphone">
+    <input type="text" id="produit" placeholder="Produit souhaité">
+    <input type="number" id="quantité" placeholder="Quantité">
+    <input type="text" id="adresse" placeholder="Adresse de livraison">
+    <button onclick="envoyerCommande()">envoyer la commmande</button>
+
+</div>
+<div id="lienWhatsapp"></div>
+<script>
+    function ouvrirFormulaire() {
+        document.getElementById("formulaireCommande").style.display ="block" 
+    }
+    function envoyerCommande() {
+    
+        window.open("https://wa.me/777632029"," _blank");
+        let Nom = document.getElementById("nom").value;
+        let Téléphone = document.getElementById("téléphone").value;
+        let Produit = document.getElementById("produit").value;
+        let Quantité = document.getElementById("quantité").value;
+        let Adresse = document.getElementById("adresse").value;
+        
+        let message = "Bonjour Van's Hair,%0A%0A" + 
+        "Je souhaite passer une commande :%0A" +
+        "Nom : " + nom + "%0A" +
+        "Téléphone : " + téléphone + "%0A" +
+        "Produit : " + Produit + "%0A" +
+        "Quantité : " + quantité + "%0A" +
+        "Adresse : " + adresse;
+        window.open("https://wa.me/777632029", "_blank");
+
+        
+
+
+    }
+</script>
+</body>
+</html>
+<footer>
+    <p>2026 Van's Hair-tous droits reserves</p>
+</footer>

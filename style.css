@@ -1,0 +1,248 @@
+main img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+main {
+    text-align: center;
+}
+main img {
+    width: 150px;
+    height: 150px;
+    object-fit: containss;
+    margin: 10px;
+
+}
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.produits img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: o auto;
+}
+.carte {
+    width: 220px;
+    padding: 15px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    
+    
+}
+.carte{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.carte:hover {
+    transform: translateY(-5px);
+}
+.carte img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.carte h3 {
+    color: #d96b8a;
+    margin-top: 10px;
+}
+.carte p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.carte button {
+    background-color: #f8b6c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.accueil {
+    text-align: center;
+    padding: 60px 20px;
+}
+.accueil h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.accueil p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.accueil button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+body{
+    margin: 0;
+}
+.accueil {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.accueil img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.accueil {
+    text-align: center;
+    padding: 30px 20px;
+}
+.accueil h1 {
+    margin-bottom: 15px;
+}
+.accueil p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+main h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+.produits {
+    padding: 20px;
+}
+footer {
+    background-color: #f8b6c8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+.apropos {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0,15);
+
+}
+.apropos h1 {
+    color: #d96b8a;
+    margin: 20px;
+
+}
+.apropos p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+.contact {
+    text-align: center;
+    padding: 40pxx 20px;
+}
+.contact form {
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    gap: 10px;
+}
+.contact form input,
+.contact form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.contact form label {
+    text-align: left;
+}
+.contact form button {
+    padding: 10px;
+    background-color: pink ;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.cordonnées {
+    text-align: center;
+    margin-top: 30px;
+}
+.cordonnées h3 {
+    margin-bottom: 15px;
+}
+.cordonnées p {
+    margin: 8px 0;
+}
+.whatsapp {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+/* Adaptation télèphone */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        width: 100%;
+        padding: 15px 10px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .produits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .carte {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom: auto;
+    }
+    form {
+        width: 90%;
+        margin: auto;
+    }
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
